@@ -23,7 +23,7 @@ Le script `Scan-Ports-Multi-Threading.py` permet de scanner les ports d'une IP e
 
 ## Utilisation
 
-Faite un git clone du repository :
+Faite un clone du repository :
 ```bash
 git clone https://github.com/Quirky1869/Scan-Ports-Multi-Threading.git
 cd Scan-Ports-Multi-Threading
