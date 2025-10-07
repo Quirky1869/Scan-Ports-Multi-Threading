@@ -27,14 +27,19 @@ Une fois dans le dossier git vous pouvez lancé le script avec :
 
 Une [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases) est disponible  
 
-Une fois la release récupérée vous pouvez la placer dans `/otp` et faire un lien logique pour l'utiliser depuis n'importe où :
+Une fois la release récupérée vous pouvez par exemple la placer dans `/otp` et faire un lien logique pour l'utiliser depuis n'importe où :
 ```bash
+chmod u+x Scan-Ports-Multi-Threading
 mv Scan-Ports-Multi-Threading /otp
 ln -s /otp/Scan-Ports-Multi-Threading /usr/local/bin/Scan-Ports-Multi-Threading
 ```
 
-> [!NOTE]
-> Assurez vous d'avoir les droits nécessaires sur `/otp/Scan-Ports-Multi-Threading`
+> [!NOTE]  
+> Assurez vous d'avoir les droits nécessaires sur `/otp/Scan-Ports-Multi-Threading`  
+> Si cela n'est pas le cas il faudra changer l'owner du fichier
+> ```bash
+> chown $USER:$USER Scan-Ports-Multi-Threading
+> ```  
 
 ## Paramètres
 
