@@ -7,7 +7,7 @@
 Le script `Scan-Ports-Multi-Threading.py` permet de scanner les ports d'une IP en multi-threading  
 
 ## Dépendances
-> ![Notes]  
+> [!NOTE] 
 > Assurez vous d'avoir [python](https://www.python.org/downloads/) d'installer sur votre pc 
 
 ## Utilisation
@@ -33,7 +33,7 @@ mv Scan-Ports-Multi-Threading /otp
 ln -s /otp/Scan-Ports-Multi-Threading /usr/local/bin/Scan-Ports-Multi-Threading
 ```
 
->  ![Notes]
+> [!NOTE]
 > Assurez vous d'avoir les droits nécessaires sur `/otp/Scan-Ports-Multi-Threading`
 
 ## Paramètres
@@ -55,20 +55,22 @@ Les paramètres disponibles sont :
 
 Permet de faire un scan de ports d'une IP avec les paramètres par défaut (65535 ports scannés) :  
 ```bash
-./Scan_Ports-Multi-Threading.py 192.168.1.1
+./Scan_Ports-Multi-Threading.py 45.86.97.8
 ```
+
+![tape](./_images/gif/Scan-Ports-Multi-Threading.gif)  
 
 Permet de faire un scan des ports 20 à 80 avec un thread de 100 d'une IP :  
 ```bash
-./Scan_Ports-Multi-Threading.py -p 20-80 -t 100 192.168.1.1  
+./Scan_Ports-Multi-Threading.py -p 20-80 -t 100 45.86.97.8 
 ```
 
 Permet de faire un scan des ports 80 à 443 avec un timeout de 1 seconde et avec un thread de 200 d'une IP :  
 ```bash
-./Scan_Ports-Multi-Threading.py -p 80-443 -s 1.0 -t 200 192.168.1.1  
+./Scan_Ports-Multi-Threading.py -p 80-443 -s 1.0 -t 200 45.86.97.8 
 ```
 
 Permet de faire un scan des 65535 ports avec un timeout de 2 secondes et un thread de 100 d'une IP :
 ```bash
-./Scan_Ports-Multi-Threading.py --settimeout 2 --threads 100 192.168.1.1  
+./Scan_Ports-Multi-Threading.py --settimeout 2 --threads 100 45.86.97.8 
 ```
