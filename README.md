@@ -28,6 +28,8 @@ Une fois dans le dossier git, vous pouvez lancer le script avec :
 
 Une [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases) est disponible  
 
+[test][releases]  
+
 Une fois la release récupérée, vous pouvez par exemple la placer dans `/otp` et faire un lien logique pour l'utiliser depuis n'importe où :
 ```bash
 chmod u+x Scan-Ports-Multi-Threading
