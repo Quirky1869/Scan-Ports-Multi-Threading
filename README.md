@@ -2,6 +2,11 @@
 
 ![](./_images/tux.png)  
 
+## Disclaimer
+
+[!CAUTION]
+Utilisez ce script uniquement dans un environnement dont vous êtes le propriétaire ou pour lequel vous disposez d’une autorisation explicite
+
 ## Introduction
 
 Le script `Scan-Ports-Multi-Threading.py` permet de scanner les ports d'une IP en multi-threading  
@@ -26,6 +31,7 @@ Une fois dans le dossier git, vous pouvez lancer le script avec :
 
 ## Release
 
+[!TIP]
 Une [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases) est disponible   
 
 Une fois la release récupérée, vous pouvez par exemple la placer dans `/otp` et faire un lien symbolique pour l'utiliser depuis n'importe où :
