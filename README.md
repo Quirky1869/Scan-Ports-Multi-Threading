@@ -2,6 +2,8 @@
 
 ![](./_images/tux.png)  
 
+![Static Badge](https://img.shields.io/badge/Python?style=social)
+
 ## Disclaimer
 
 > [!CAUTION]
