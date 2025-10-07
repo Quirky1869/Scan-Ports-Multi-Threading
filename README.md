@@ -35,7 +35,7 @@ mv Scan-Ports-Multi-Threading /otp
 ln -s /otp/Scan-Ports-Multi-Threading /usr/local/bin/Scan-Ports-Multi-Threading
 ```
 
-> [!NOTE] 
+> [!WARNING] 
 > Assurez vous d'avoir les droits nécessaires sur `/otp/Scan-Ports-Multi-Threading`  
 > Si cela n'est pas le cas il faudra changer l'owner du fichier
 > ```bash
