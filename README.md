@@ -2,7 +2,7 @@
 
 ![](./_images/tux.png)  
 
-![Static Badge](https://img.shields.io/badge/Python?style=social)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
 ## Disclaimer
 
