@@ -7,7 +7,7 @@
 Le script `Scan-Ports-Multi-Threading.py` permet de scanner les ports d'une IP en multi-threading  
 
 ## Dépendances
-> [!NOTE]
+> [!IMPORTANT]
 > Assurez vous d'avoir [python](https://www.python.org/downloads/) d'installer sur votre pc
 
 ## Utilisation
