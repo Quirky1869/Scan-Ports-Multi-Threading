@@ -25,7 +25,7 @@ Une fois dans le dossier git vous pouvez lancé le script avec :
 
 ## Release
 
-Une [release](releases/tag/V1.0) est disponible  
+Une [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases/tag/V1.0) est disponible  
 
 Une fois la release récupérée vous pouvez la placer dans `/otp` et faire un lien logique pour l'utiliser depuis n'importe où :
 ```bash
