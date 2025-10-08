@@ -3,7 +3,7 @@
 ![](./_images/tux.png)  
 
 ![Static Badge](https://img.shields.io/badge/Version-1.0-lime)
-![Static Badge](https://img.shields.io/badge/Python-3.15-blue)
+![Static Badge](https://img.shields.io/badge/Python-3.13-blue)
 ![Static Badge](https://img.shields.io/badge/Multi-Threading-orange)
 [![License](https://img.shields.io/github/license/Quirky1869/Scan-Ports-Multi-Threading?color=8A2BE2)](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/blob/python/LICENSE)
 
