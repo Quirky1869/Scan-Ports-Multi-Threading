@@ -11,85 +11,88 @@
 ## Disclaimer
 
 > [!CAUTION]
-Utilisez ce script uniquement dans un environnement dont vous êtes le propriétaire ou pour lequel vous disposez d’une autorisation explicite
+Use this script only in an environment that you own or for which you have explicit permission
 
 ## Introduction
 
-Le script `Scan-Ports-Multi-Threading.py` permet de scanner les ports d'une IP en multi-threading  
+The `Scan-Ports-Multi-Threading.py` script allows you to scan the ports of a multi-threaded IP address
 
-## Dépendances
+## Dependencies
 > [!IMPORTANT]
-> Assurez vous d'avoir [python](https://www.python.org/downloads/) d'installer sur votre pc
+
+> Make sure you have [python](https://www.python.org/downloads/) installed on your PC
 
 ## Utilisation
 
-Faite un clone du repository :
+Create a clone of the repository :
 ```bash
 git clone https://github.com/Quirky1869/Scan-Ports-Multi-Threading.git
 cd Scan-Ports-Multi-Threading
 chmod u+x Scan-Ports-Multi-Threading.py
 ```
 
-Une fois dans le dossier git, vous pouvez lancer le script avec :
+Once in the git directory, you can run the script with :
 ```bash
-./Scan-Ports-Multi-Threading.py <adresse-ip>
+./Scan-Ports-Multi-Threading.py <ip-address>
 ```
 
 ## Release
 
-> [!TIP]  
-Une [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases) est disponible   
+> [!TIP]
+A [release](https://github.com/Quirky1869/Scan-Ports-Multi-Threading/releases) is available
 
-Une fois la release récupérée, vous pouvez par exemple la placer dans `/otp` et faire un lien symbolique pour l'utiliser depuis n'importe où :
+Once you have downloaded the release, you can, for example, place it in `/otp` and create a symbolic link to use it from anywhere :
 ```bash
 chmod u+x Scan-Ports-Multi-Threading
 mv Scan-Ports-Multi-Threading /otp
 ln -s /otp/Scan-Ports-Multi-Threading /usr/local/bin/Scan-Ports-Multi-Threading
 ```
 
-> [!WARNING] 
-> Assurez vous d'avoir les droits nécessaires sur `/otp/Scan-Ports-Multi-Threading`  
-> Si cela n'est pas le cas il faudra changer l'owner du fichier
+> [!WARNING]
+> Make sure you have the necessary permissions on `/otp/Scan-Ports-Multi-Threading`
+> If not, you will need to change the file owner.
 > ```bash
 > chown $USER:$USER Scan-Ports-Multi-Threading
-> ``` 
+> ```
 
-## Paramètres
+## Parameters
 
-Une aide est disponible afin de connaitre les paramètres possibles du script :
+Help is available to learn about the possible parameters of the script:
 ```bash
+
 ./Scan-Ports-Multi-Threading.py -h
+
 ./Scan-Ports-Multi-Threading.py --help
 ```
 
-Les paramètres disponibles sont :
+The available parameters are:
 ```bash
--p, --ports      Spécifie la plage de ports (format: start-end, ex: 80-443)
--t, --threads    Nombre de threads à utiliser (défaut: 500)
--s, --settimeout Timeout en secondes pour chaque connexion (défaut: 0.5)
+
+-p, --ports Specifies the port range (format: start-end, e.g., 80-443)
+-t, --threads Number of threads to use (default: 500)
+-s, --settimeout Timeout in seconds for each connection (default: 0.5)
 ```
 
-## Exemples
+## Examples
 
-Permet de faire un scan de ports d'une IP avec les paramètres par défaut (65535 ports scannés) :  
+Allows you to scan ports from an IP address using default settings (65535 ports scanned):
 ```bash
 ./Scan_Ports-Multi-Threading.py 45.86.97.8
 ```
 
-![tape](./_images/gif/Scan-Ports-Multi-Threading.gif)  
+![tape](./_images/gif/Scan-Ports-Multi-Threading.gif)
 
-Permet de faire un scan des ports 20 à 80 avec un thread de 100 d'une IP :  
+Allows you to scan ports 20 to 80 with a thread of 100 from an IP address:
 ```bash
 ./Scan_Ports-Multi-Threading.py -p 20-80 -t 100 45.86.97.8
 ```
 
-Permet de faire un scan des ports 80 à 443 avec un timeout de 1 seconde et avec un thread de 200 d'une IP :  
+Allows you to scan ports 80 to 443 with a timeout of 1 second and a thread of 200 from an IP address:
 ```bash
 ./Scan_Ports-Multi-Threading.py -p 80-443 -s 1.0 -t 200 45.86.97.8
-```
 
-Permet de faire un scan des 65535 ports avec un timeout de 2 secondes et un thread de 100 d'une IP :
+This allows you to scan all 65,535 ports with a 2-second timeout and 100 threads for a given IP address:
+
 ```bash
 ./Scan_Ports-Multi-Threading.py --settimeout 2 --threads 100 45.86.97.8
 ```
-
