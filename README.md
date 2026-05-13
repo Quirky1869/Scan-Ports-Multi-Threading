@@ -20,7 +20,6 @@ The `Scan-Ports-Multi-Threading.py` script allows you to scan the ports of a mul
 ## Dependencies
 
 > [!WARNING]
-
 > Make sure you have [python](https://www.python.org/downloads/) installed on your PC
 
 ## Utilisation
