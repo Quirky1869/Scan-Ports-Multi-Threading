@@ -18,7 +18,7 @@ Use this script only in an environment that you own or for which you have explic
 The `Scan-Ports-Multi-Threading.py` script allows you to scan the ports of a multi-threaded IP address
 
 ## Dependencies
-> [!IMPORTANT]
+> [!WARNING]
 
 > Make sure you have [python](https://www.python.org/downloads/) installed on your PC
 
